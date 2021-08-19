@@ -21,21 +21,18 @@ addEventListener("DOMContentLoaded", () => {
 
     // si se hace click en algun elemento
     // que no son los botones que activan el menu, desactiva los menus
-    document.addEventListener("click", (event) => {
-        if (event.target !== selectFilter ) {
-            filterMenuStatic.classList.remove("is-active")
-        }
-
-        if (event.target !== filterButton) {
-            filterPanel.classList.remove("is-active")
-        }
+    document.addEventListener("click", () => {
+        filterMenuStatic.classList.remove("is-active")
+        filterPanel.classList.remove("is-active")
     })
     
-    selectFilter.addEventListener("click", () => {
+    selectFilter.addEventListener("click", event => {
+        event.stopPropagation()
         filterMenuStatic.classList.toggle("is-active")
     })
     
-    filterButton.addEventListener("click", () => {
+    filterButton.addEventListener("click", event => {
+        event.stopPropagation()
         filterPanel.classList.toggle("is-active")
     })
 
