@@ -22,7 +22,7 @@ PUBLICACIONES
 /* header autor menu content */
 .post-1 .header,
 .post-1 .autor .container {
-    padding: .6em;
+    padding: .6rem;
     border-radius: .9em;
 }
 
@@ -77,10 +77,14 @@ PUBLICACIONES
 
 /* contenido de l a publicacion */
 .post-1 .content {
-    /* margin-left: 9.9%; */
-    /* margin-right: 9.9%; */
+    padding-left: .6rem;
+    padding-right: .6rem;
     grid-area: content;
-    /* background-color: var(--secondary-color); */
+    
+    @media screen and (min-width: 900px) {
+        padding-left: 12.6%;
+        padding-right: 12.6%;
+    }
 }
 
 .post-1 .content .title {
