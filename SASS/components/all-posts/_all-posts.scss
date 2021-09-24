@@ -1,0 +1,64 @@
+/* 
+
+PAGINA DE ALL POSTS
+
+*/
+
+.all-posts > .title {
+    text-align: center;
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: var(--h2-font-size);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.all-posts .container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 900px) {
+    .all-posts .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.all-posts .container article .description {
+    background-color: var(--bg-color-alt);
+    box-shadow: .029rem .029rem 0.27rem var(--secondary-color);
+}
+
+.all-posts .container article .description {
+    padding: 2.7%;
+}
+
+.all-posts .container article .title {
+    display: inline-block;
+    font-size: var(--h3-font-size);
+    font-weight: 700;
+    color: var(--title-color);
+    text-decoration: none;
+}
+
+.all-posts .container article .title:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.all-posts .container article .type {
+    font-size: var(--smaller-font-size);
+    color: var(--text-color);
+    font-weight: 700;
+    padding-top: .27em;
+    padding-bottom: .27em;
+}
+
+.all-posts .container article .text {
+    font-size: var(--small-font-size);
+    line-height: 1.4em;
+    font-weight: 300;
+    color: var(--text-color);
+}
+

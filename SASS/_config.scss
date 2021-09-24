@@ -1,0 +1,66 @@
+:root {
+    font-family: 'Merryweather', sans-serif;
+    --h1-font-size: 2.49rem;
+    --h2-font-size: 1.8rem;
+    --h3-font-size: 1.46rem;
+    --medium-font-size: 1.26rem;
+    --small-font-size: 1.09rem;
+    --smaller-font-size: .92rem;
+    --header-height: 4.6rem;
+    --title-color: rgb(4, 18, 26);
+    --text-color: rgb(37, 38, 58);
+    --primary-color: rgb(8, 99, 237);
+    --secondary-color: rgba(50, 66, 155, 0.2);
+    --bg-color: rgb(239, 241, 245);
+    --bg-color-alt: rgb(248, 252, 251);
+    --menu-bg-color: rgba(71, 79, 140, 0.6);
+    /* publicacion */
+    --def-margin-bottom: .46rem;
+}
+
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    
+    @media screen and (min-width: 900px) {
+        font-size: 16px;
+    }
+}
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-rows:auto auto 1fr auto;
+}
+
+.void {
+    background-color: var(--bg-color);
+}
+
+.section-container:not(.banner) {
+    padding-left: 12.6%;
+    padding-right: 12.6%;
+    background-color: var(--bg-color);
+    padding-bottom: 4.6rem;
+}
+
+
+img:not(.HEADER img) {
+    display: block;
+    width: 100%;
+}
+
+.title, .text {
+    letter-spacing: 0.012em;
+}

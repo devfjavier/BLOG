@@ -1,0 +1,30 @@
+/*
+
+SECCION DEL BANNER
+
+*/
+
+.banner {
+    position: relative;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(https://images.unsplash.com/photo-1505327191481-d31e1fb4ff79?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=904&q=80);
+}
+
+.banner .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 6%;
+    height: inherit;
+    background-color: var(--secondary-color);
+}
+
+.banner .container .title {
+    font-size: var(--h1-font-size);
+    text-shadow: .029em .029em .06em var(--title-color);
+    color: var(--bg-color-alt);
+    font-weight: 900;
+}

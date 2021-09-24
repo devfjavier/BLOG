@@ -1,0 +1,54 @@
+/*
+
+SECCION DEL LAST POSTS
+
+*/
+
+.last-posts > .title {
+    font-size: var(--h2-font-size);
+    font-weight: 600;
+    color: var(--title-color);
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.last-posts .container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 2.7rem;
+}
+
+@media screen and (min-width: 900px) {
+    .last-posts .container {
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+}
+
+.last-posts .container .post {
+    display: block;
+    background-color: var(--bg-color-alt);
+    box-shadow: .029rem .029rem 0.27rem var(--secondary-color);
+}
+
+.last-posts .container .post .description{
+    padding: 2.7%;
+}
+
+.last-posts .container .post .title {
+    font-size: var(--h3-font-size);
+    font-weight: 700;
+    color: var(--title-color);
+    text-decoration: none;
+}
+.last-posts .container .post .title:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.last-posts .container .post .text {
+    font-size: var(--small-font-size);
+    font-weight: 300;
+    color: var(--title-color);
+    text-decoration: none;
+}
